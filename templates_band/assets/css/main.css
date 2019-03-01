@@ -1,0 +1,183 @@
+html {
+	/*scroll-behavior: smooth;*/
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: black;
+}
+
+h2 {
+	font-family: "Segoe UI";
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+/*-------------------| utilitiy class |-------------------*/
+.content-control {
+	max-width: 768px;
+}
+
+.spacing-sm {
+	letter-spacing: 4px;
+}
+
+.mr-inherit {
+	margin-right: inherit;
+}
+
+.font-larger {
+	font-size: larger;
+}
+
+.mt-6 {
+	margin-top: 3.5rem !important;
+}
+
+.mt-7 {
+	margin-top: 5rem !important;
+}
+
+@media (min-width: 992px) {
+	.d-md-list-item {
+		display: list-item !important;
+	}
+}
+
+/*-------------------| .hero-slider |-------------------*/
+.slider-item {
+	position: relative;
+}
+
+.slider-item figcaption {
+	position: absolute;
+	bottom: 6%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+.slider-item figcaption h4, .slider-item figcaption p {
+	font-weight: bold;
+}
+
+.slider-item figcaption p {
+	font-size: larger;
+}
+
+/*-------------------| .intro |-------------------*/
+.team-members figure img {
+	border-radius: 4px;
+	filter: grayscale(100%);
+	transition: 0.5s filter ease;
+}
+
+.team-members figure img:hover {
+	filter: grayscale(0);
+}
+
+/*-------------------| .tour |-------------------*/
+.tour {
+	background-color: black;
+}
+
+.buy-ticket {
+	display: flex;
+	flex-direction: column;
+}
+
+.buy-ticket .card {
+	width: 100%;
+	overflow: hidden;
+}
+
+.buy-ticket .card img {
+	opacity: 0.8;
+	transition: 0.2s opacity ease;
+}
+
+.buy-ticket .card img:hover {
+	opacity: 1;
+}
+
+@media (min-width: 768px) {
+	.buy-ticket {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.buy-ticket .card {
+		max-width: 14rem;
+	}
+}
+
+/*-------------------| .social-icons |-------------------*/
+#footer {
+	text-align: center;
+}
+
+.social-icons {
+	padding: 2rem 1rem;
+}
+
+.social-icons a {
+	display: inline-block;
+	font-size: 26px;
+	margin: 0.2rem;
+}
+
+/*-------------------| #header |-------------------*/
+.navbar {
+	background-color: black;
+	color: white;
+}
+
+.navbar-toggler, .navbar-toggler:focus {
+	outline: none;
+	color: white;
+}
+
+.navbar-nav .nav-item a.nav-link {
+	color: white;
+	padding: 1rem 15px;
+}
+
+.navbar-nav .nav-item:hover {
+	background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-item:hover a.nav-link {
+	color: black;
+}
+
+#search-btn {
+	margin-right: 15px;
+}
+
+
+
+@media (min-width: 992px) {
+	.navbar-nav .nav-item a.nav-link {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+		display: block;
+		margin: 0;
+		border-radius: 0;
+	}
+
+	#search-btn {
+		margin-right: 0;
+		padding: 1rem 1.5rem;
+	}
+
+	#search-btn:hover {
+		background-color: #dc3545;
+	}
+}
